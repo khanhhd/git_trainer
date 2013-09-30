@@ -48,3 +48,4 @@ group :test do
 end
 gem 'therubyracer'
 gem 'execjs'
+gem 'resque'
