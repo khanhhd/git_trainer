@@ -1,4 +1,4 @@
 app_tutorial
 ============
 
-This tutorial for using rails 4
+This project for using rails 4
