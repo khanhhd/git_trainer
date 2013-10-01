@@ -2,7 +2,7 @@ require "spec_helper"
 
 describe "Static page" do
   describe "Home page" do
-    before {visit '/static_pages/home'}
+    before {visit root_path}
     it "should have the content 'StaticPages#home'" do
       expect(page).to have_content("StaticPages#home")
     end
