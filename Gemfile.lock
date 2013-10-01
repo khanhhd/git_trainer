@@ -67,6 +67,14 @@ GEM
     factory_girl_rails (4.2.1)
       factory_girl (~> 4.2.0)
       railties (>= 3.0.0)
+    ffi (1.9.0)
+    formatador (0.2.4)
+    guard (1.8.3)
+      formatador (>= 0.2.4)
+      listen (~> 1.3)
+      lumberjack (>= 1.0.2)
+      pry (>= 0.9.10)
+      thor (>= 0.14.6)
     hike (1.2.3)
     i18n (0.6.5)
     jbuilder (1.5.1)
@@ -77,6 +85,11 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.0)
     libv8 (3.16.14.3)
+    listen (1.3.1)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+      rb-kqueue (>= 0.2)
+    lumberjack (1.0.4)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -122,6 +135,11 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.1.0)
+    rb-fsevent (0.9.3)
+    rb-inotify (0.9.2)
+      ffi (>= 0.5.0)
+    rb-kqueue (0.2.0)
+      ffi (>= 0.5.0)
     rdoc (3.12.2)
       json (~> 1.4)
     redis (3.0.4)
@@ -201,7 +219,8 @@ DEPENDENCIES
   capybara (= 2.1.0)
   coffee-rails (~> 4.0.0)
   execjs
-  factory_girl_rails
+  factory_girl_rails (= 4.2.1)
+  guard
   jbuilder (~> 1.2)
   jquery-rails
   pry

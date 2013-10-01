@@ -31,6 +31,9 @@ gem 'execjs'
 gem 'resque'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'bcrypt-ruby', '3.0.1'
+gem 'guard'
+
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -41,8 +44,8 @@ group :test do
   gem "pry"
   gem "pry-debugger"
   gem "rspec-rails"
-  gem "factory_girl_rails"
   gem "better_errors"
+  gem 'factory_girl_rails', '4.2.1'
   gem "binding_of_caller"
   gem "rails-erd"
   gem 'capybara', '2.1.0'
