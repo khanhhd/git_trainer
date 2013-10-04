@@ -20,3 +20,4 @@ Usage
 
 1. <code> $ rails s </code>
 2. Open web brower and access to <code> http://localhost:3000 </code>
+3. Sign in with  email <code> example@railstutorial.org </code> and password <code> foobar </code>
