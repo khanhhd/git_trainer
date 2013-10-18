@@ -11,20 +11,9 @@ Fetch and pull code from develop branch
 ```sh
 $ cd git_trainer
 $ git fetch
-$ git pull origin
+$ git remote add framgia https://github.com/khanhhd/git_trainer.git
 $ git checkout -b develop framgia/develop
 ```
-## Controlling remote.
-1. You must have 2 remote, 1 is to pull/push from/to your repo, 2 is to pull from project
-repo (to get newest code).
-Using command `$ git remote -v` to see current remote. There is only origin remote(origin is often 
-use for naming your repo, you can set another name).
-2. Adding remote for project repo (to get newest code)
-
-```sh
-$ git remote add framgia https://github.com/khanhhd/git_trainer.git
-```
-
 now, `$ git remote -v`, you will see 2 remote like this:
 
 ```sh
@@ -33,6 +22,13 @@ framgia https://github.com/khanhhd/git_trainer.git (push)
 origin  https://github.com/kienbt01359/git_trainer.git (fetch)
 origin  https://github.com/kienbt01359/git_trainer.git (push)
 ```
+
+
+You will have 2 remote. 1(origin) is to pull/push from/to your repo, 2 is to pull from project(framgia)
+repo (to get newest code).
+Using command `$ git remote -v` to see current remote. There is only origin remote(origin is often 
+use for naming your repo, you can set another name).
+
 
 ## Pull request
 When you are assigned a task from redmine or something, you do it and you send pull request to reviewer to merge your code.
