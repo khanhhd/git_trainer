@@ -1,13 +1,12 @@
 #How to start with Git ?
 ## Be a part of project.
-1. You must clone project repository(repo) into your repo by click "Fork" button
-in project repo.
-2. Using Terminal to clone (download) project to local
+You must clone project repository(repo) into your repo by click "Fork" button in project repo.<br/>
+Using Terminal to clone (download) project to local
 
 ```sh
 $ git clone https://github.com/khanhhd/git_trainer.git
 ```
-3. Fetch and pull code from develop branch
+Fetch and pull code from develop branch
 
 ```sh
 $ cd git_trainer
