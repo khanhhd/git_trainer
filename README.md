@@ -38,26 +38,26 @@ origin  https://github.com/kienbt01359/git_trainer.git (push)
 ## Pull request
 When you are assigned a task from redmine or something, you do it and you send pull request to reviewer to merge your code.
 There are somethings you must do.
- 1. Get newest code from develop branch of project repo.
+ Get newest code from develop branch of project repo.
 
 ```sh
 $ git checkout develop
 $ git pull framgia develop
 ```
- 2. Checkout and switch new branch from develop branch
+ Checkout and switch new branch from develop branch
 
 ```sh
 $ git checkout -b taskID
 ```
- 3. When you've done coding, requirement matched correctly, you will push to your taskID branch
+ When you've done coding, requirement matched correctly, you will push to your taskID branch
 
 ```sh
 $ git add .
 $ git commit -m "Name of task"
 $ git push origin taskID
 ```
- 4. Go to your github's project repo. And send pull request to framgia/develop
- 5. If your code is OK, reviewers will merge, if not, they will adding some comments, and you must fix it again.
+ Go to your github's project repo. And send pull request to framgia/develop
+ If your code is OK, reviewers will merge, if not, they will adding some comments, and you must fix it again.
 And then you will push it again.
 
 This is called a cycle of pull-request.
