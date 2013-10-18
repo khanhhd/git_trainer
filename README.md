@@ -2,11 +2,15 @@
 ## Be a part of project.
 You must clone project repository(repo) into your repo by click "Fork" button in project repo.<br/>
 Using Terminal to clone (download) project to local
+1. You must clone project repository(repo) into your repo by click "Fork" button
+in project repo.
+2. Using Terminal to clone (download) project to local
 
 ```sh
 $ git clone https://github.com/khanhhd/git_trainer.git
 ```
 Fetch and pull code from develop branch
+3. Fetch and pull code from develop branch
 
 ```sh
 $ cd git_trainer
@@ -38,17 +42,21 @@ origin  https://github.com/kienbt01359/git_trainer.git (push)
 When you are assigned a task from redmine or something, you do it and you send pull request to reviewer to merge your code.
 There are somethings you must do.<br/>
  Get newest code from develop branch of project repo.
+There are somethings you must do.
+1. Get newest code from develop branch of project repo.
 
 ```sh
 $ git checkout develop
 $ git pull framgia develop
 ```
  Checkout and switch new branch from develop branch
+2. Checkout and switch new branch from develop branch
 
 ```sh
 $ git checkout -b taskID
 ```
  When you've done coding, requirement matched correctly, you will push to your taskID branch
+3. When you've done coding, requirement matched correctly, you will push to your taskID branch
 
 ```sh
 $ git add .
@@ -57,6 +65,8 @@ $ git push origin taskID
 ```
  Go to your github's project repo. And send pull request to framgia/develop<br/>
  If your code is OK, reviewers will merge, if not, they will adding some comments, and you must fix it again.
+4. Go to your github's project repo. And send pull request to framgia/develop
+5. If your code is OK, reviewers will merge, if not, they will adding some comments, and you must fix it again.
 And then you will push it again.
 
 This is called a cycle of pull-request.
