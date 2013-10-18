@@ -5,8 +5,12 @@
   <h1>
     <%= gravatar_for @user %>
     <%= @user.name %>
-    <%= @user.email %>
+    <ol>
+      Email: <%= @user.email %>
+    </ol>
+    
   </h1>
+  <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
   </section>
   </aside>
   <div class="span8">
