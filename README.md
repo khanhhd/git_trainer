@@ -58,3 +58,19 @@ And then you will push it again.
 
 This is called a cycle of pull-request.
 
+## Faster commit
+There are 2 ways to avoid enter username/password when pull/push to github.
+### 1. Generate SSH key
+https://help.github.com/articles/generating-ssh-keys
+### 2. Generate .netrc
+This file provide username/password to github server when asking.<br/><br/>
+Step 1: Open Terminal, create a file `.netrc`<br/>
+Step 2: Filling file with your username/password and machine
+
+```sh
+machine github.com
+  login [*username*]
+  password [*password*]
+```
+
+
