@@ -10,9 +10,10 @@ Fetch and pull code from develop branch
 
 ```sh
 $ cd git_trainer
-$ git fetch
 $ git remote add framgia https://github.com/khanhhd/git_trainer.git
-$ git checkout -b develop framgia/develop
+$ git fetch framgia
+$ git checkout framgia/develop
+$ git checkout -b develop
 ```
 now, `$ git remote -v`, you will see 2 remote like this:
 
@@ -48,7 +49,7 @@ $ git checkout -b taskID
 
 ```sh
 $ git add .
-$ git commit -m "Name of task"
+$ git commit -m "refs #TaskID Name of task"
 $ git push origin taskID
 ```
  Go to your github's project repo. And send pull request to framgia/develop<br/>
