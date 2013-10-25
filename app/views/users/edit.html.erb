@@ -10,14 +10,17 @@
 
       <%= f.label :email , 'Email cua ban'%>
       <%= f.text_field :email %>
-
+      
       <%= f.label :password %>
       <%= f.password_field :password %>
 
       <%= f.label :password_confirmation, "Nhap lai mat khau" %>
       <%= f.password_field :password_confirmation %>
 
-      <%= f.submit "Cap nhat thong tin", class: "btn btn-large btn-primary" %>
+      <%= f.label :phone %>
+      <%= f.text_field :phone %>
+
+      <%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
     <% end %>
 
     <%= gravatar_for @user %>
