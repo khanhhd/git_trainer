@@ -4,7 +4,7 @@ You must clone project repository(repo) into your repo by click "Fork" button in
 Using Terminal to clone (download) project to local
 
 ```sh
-$ git clone https://github.com/kienbt03159/git_trainer.git
+$ git clone https://github.com/username_git/git_trainer.git
 ```
 Fetch and pull code from develop branch
 
