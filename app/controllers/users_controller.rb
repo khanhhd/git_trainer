@@ -66,7 +66,7 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit(:name, :email, :password, 
-                                 :password_confirmation, :address)
+                                 :password_confirmation)
   end
 
   def singed_in_user
