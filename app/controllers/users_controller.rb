@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   before_action :correct_user, only: [:update, :edit]
   before_action :admin_user, only: :destroy
   before_action :signed_in_user,
-                  only: [:index, :edit, :update, :destroy, :following, :followers]
+                  except: [:show, :create, :new]
   def index
     @users = User.paginate(page: params[:page], per_page: 2)
   end
@@ -65,7 +65,8 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(:name, :email, :password, :password_confirmation, :address)
+    params.require(:user).permit(:name, :email, :password, 
+                                 :password_confirmation, :address)
   end
 
   def singed_in_user
