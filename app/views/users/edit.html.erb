@@ -1,20 +1,20 @@
 <% provide(:title, "Edit user") %>
-<h1>Cap nhat thong tin ca nhan</h1>
+<h1>Update Profile</h1>
 
 <div class="row">
   <div class="span6 offset3">
     <%= form_for(@user) do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
-      <%= f.label :name , 'Ten cua ban'%>
+      <%= f.label :name , 'Name'%>
       <%= f.text_field :name %>
 
-      <%= f.label :email , 'Email cua ban'%>
+      <%= f.label :email , 'Email'%>
       <%= f.text_field :email %>
       
       <%= f.label :password %>
       <%= f.password_field :password %>
 
-      <%= f.label :password_confirmation, "Nhap lai mat khau" %>
+      <%= f.label :password_confirmation, "Confirm Password" %>
       <%= f.password_field :password_confirmation %>
 
       <%= f.label :phone %>
@@ -24,6 +24,6 @@
     <% end %>
 
     <%= gravatar_for @user %>
-    <a href="http://gravatar.com/emails">Cap nhat Gravatar</a>
+    <a href="http://gravatar.com/emails">Change Gravatar</a>
   </div>
 </div>
