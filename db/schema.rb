@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131025082439) do
+ActiveRecord::Schema.define(version: 20131025085811) do
 
   create_table "microposts", force: true do |t|
     t.string   "content"
@@ -41,11 +41,8 @@ ActiveRecord::Schema.define(version: 20131025082439) do
     t.boolean  "admin",           default: false
     t.datetime "created_at"
     t.datetime "updated_at"
-<<<<<<< HEAD
     t.string   "address"
-=======
     t.string   "phone"
->>>>>>> refs #8271 Add phone number for user
   end
 
   add_index "users", ["remember_token"], name: "index_users_on_remember_token"
