@@ -24,7 +24,7 @@ class MicropostsController < ApplicationController
   end
 
   def correct_user
-    @micropost = current_user.microposts.find_by(id: params[:id])
+    @micropost = current_user.microposts.find_by(id: params[:id], per_page: 15)
     redirect_to root_url if @micropost.nil?
   end
 end
