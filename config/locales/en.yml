@@ -21,3 +21,10 @@
 
 en:
   hello: "Hello world"
+  home_welcom_message: "Welcome to the Sample App"
+  home_description_message: "This is the home page for the Ruby on Rails Tutorial sample application."
+  home_register_message: "Register"
+  view_my_profile: "View my profile"
+  post: "Post"
+  compose_new_micropost: "Compose new micropost"
+  micropost_feed: "Micropost Feed"

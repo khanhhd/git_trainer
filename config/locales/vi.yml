@@ -1,0 +1,8 @@
+vi:
+  home_welcom_message: "Chào mừng bạn đến với Sample App"
+  home_description_message: "Đây là trang chủ cho ứng dụng ví dụ từ Ruby on Rails Tutorial."
+  home_register_message: "Đăng ký"
+  view_my_profile: "Xem profile của tôi"
+  post: "Đăng"
+  compose_new_micropost: "Soạn một bài mới"
+  micropost_feed: "Thêm bài viết"
