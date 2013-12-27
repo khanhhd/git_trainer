@@ -72,7 +72,7 @@ $ git push origin taskID -f           (force new code to existed branch)
 And you should notice reviews to review again. If OK -> will merge. If has any comments -> Do this part again.
 ### 3. Conflicts
 Your pushed code has conflict with develop branch of project, so it can not be merged automatically.<br/>
-In this case, you should do..
+In this case, you should do..<br/>
 1. Get newest code from framgia/develop to your develop branch
 
 ```sh
